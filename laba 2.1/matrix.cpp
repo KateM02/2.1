@@ -158,7 +158,7 @@ matrix matrix :: operator / (const double a)
 	}
 	return res;
 }
-// онтроль сравнени€ вещественных чисел
+
 bool matrix :: operator == (const matrix& c)
 {
 	if (_n == c._n && _m == c._m)
@@ -175,7 +175,7 @@ bool matrix :: operator == (const matrix& c)
 	}
 	return false;
 }
-//fabs(_data[i][j] - c._data[i][j]) > 0.00001
+
 bool matrix :: operator != (const matrix& c)
 {
 	if (_n == c._n && _m == c._m)
