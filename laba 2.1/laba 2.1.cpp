@@ -34,24 +34,17 @@ matrix input_values()
 }
 int menu()
 {
-	while (true)
-	{
-		std::cout << "\n1.Input matrix" << std::endl << "2.Perform math operations" << std::endl << "3.Exit\n";
-		int key = get_key();
-		if (key >= 49 && key <= 51)
-			return key;
-	}
+	std::cout << "\n1.Input matrix" << std::endl << "2.Perform math operations" << std::endl << "3.Exit\n";
+	int key = get_key();
+	if (key >= 49 && key <= 51)
+		return key;
 }
 int menu_matematical_operation()
 {
-	while (true)
-	{
-		std::cout << "\n1.matrix addition\n" << "2.subtraction of matrices\n" << "3.matrix multiplication\n" << "4.multiplication by a number\n" << "5.division by number\n" << "6.comparison of matrices\n" << "7.index appeal\n" << "8.finding the trace of a matrix\n";
-		int key = get_key();
-		if (key >= 49 && key <= 56)
-			return key;
-	}
-
+	std::cout << "\n1.matrix addition\n" << "2.subtraction of matrices\n" << "3.matrix multiplication\n" << "4.multiplication by a number\n" << "5.division by number\n" << "6.comparison of matrices\n" << "7.index appeal\n" << "8.finding the trace of a matrix\n";
+	int key = get_key();
+	if (key >= 49 && key <= 56)
+		return key;
 }
 
 void matematical_operation(matrix a)
